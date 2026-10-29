@@ -73,3 +73,34 @@
 # for i in range(1,n+1):
 #     f=f*i
 # print(f)
+
+
+
+
+#prime number
+# n=5
+# if n>1:
+#     for i in range(2,n):
+#         if n%i==0:
+#             print("not a prime number")
+#     else:
+#         print("prime number")
+
+
+#seven table
+# n=7
+# for i in range(1,n+4):
+#     print(n,"*",i,"=",(n*i))
+
+
+
+#binary number
+n=1010
+sum=0
+power=0
+for i in range(n):
+    digit=n%10
+    sum=sum+digit*2**power
+    n=n//2
+    power=power+1
+print(sum)
